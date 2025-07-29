@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Check, Star, Zap } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Card } from '../ui/Card';
+import { ContactForm } from './ContactForm';
 
 export function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -267,7 +268,18 @@ export function Pricing() {
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             Need a custom plan? We're here to help.
           </p>
-          <Button variant="ghost">
+          <Button
+            variant="ghost"
+            onClick={() => {
+              // contact form logic
+              if (typeof window !== "undefined") {
+                const contactSection = document.getElementById("contactform");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
+          >
             Contact our sales team
           </Button>
         </motion.div>

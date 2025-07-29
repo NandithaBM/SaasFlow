@@ -5,7 +5,7 @@ import { Button } from '../ui/Button';
 
 export function CTA() {
   return (
-    <section className="py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden">
+    <section id="about" className="py-24 bg-white dark:bg-gray-800">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -59,7 +59,7 @@ export function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
           >
             Ready to transform
             <br />
@@ -74,7 +74,7 @@ export function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-8 leading-relaxed"
           >
             Join thousands of companies already using SaaSFlow to streamline their operations, 
             boost productivity, and accelerate growth. Start your free trial today.
@@ -102,7 +102,7 @@ export function CTA() {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-4 text-lg"
+                className="border-blue/30 text-black hover:bg-white/10 backdrop-blur-sm px-8 py-4 text-lg"
               >
                 Schedule Demo
               </Button>
@@ -115,10 +115,10 @@ export function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-blue-100"
+            className="mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-black dark:text-white mb-6"
           >
             <div className="flex items-center space-x-2">
-              <span className="text-2xl">✓</span>
+              <span className="text-2xl ">✓</span>
               <span>14-day free trial</span>
             </div>
             <div className="flex items-center space-x-2">

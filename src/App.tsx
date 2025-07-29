@@ -9,6 +9,8 @@ import { Footer } from './components/layout/Footer';
 import { FloatingWidget } from './components/ui/FloatingWidget';
 import { useTheme } from './hooks/useTheme';
 import { FloatingDoll } from './components/ui/FloatingDoll';
+import { FAQ } from './components/sections/FAQ'
+import { ContactForm } from './components/sections/ContactForm'
 
 function App() {
   // Initialize theme hook to set up theme detection
@@ -24,6 +26,8 @@ function App() {
         <Pricing />
         <Testimonials />
         <CTA />
+        <FAQ />
+        <ContactForm />
       </main>
       <Footer />
       <FloatingWidget />

@@ -20,7 +20,9 @@ export function Navbar() {
     { name: 'Features', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'About', href: '#about' }
+    { name: 'About', href: '#about' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contactform' }
   ];
 
   return (
