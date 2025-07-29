@@ -6,7 +6,14 @@ import { AnimatedText } from '../ui/AnimatedText';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false, amount: 0.6 }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -40,32 +47,35 @@ export function Hero() {
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }}
+            viewport={{ once: true }}
             className="space-y-8"
           >
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
               className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium"
             >
               <Star className="w-4 h-4" />
-              <span>Trusted by 10,000+ teams worldwide</span>
+              <span>Trusted by 10,000+ teams worldwide, ✨Powered by Advanced AI Technology</span>
             </motion.div>
 
             {/* Heading */}
             <div className="space-y-4">
               <AnimatedText
-                text="Transform Your Business With"
+                text="Transform Your Marketing With"
                 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
                 delay={0.3}
               />
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
+                viewport={{ once: true }}
                 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent leading-tight"
               >
                 Next-Gen SaaS Solutions
@@ -75,18 +85,21 @@ export function Hero() {
             {/* Description */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
+              viewport={{ once: true }}
               className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg"
             >
-              Streamline your workflow, boost productivity, and scale your business with our cutting-edge platform designed for modern teams.
+              ADmyBRAND AI Suite revolutionizes your marketing strategy with intelligent automation, 
+              personalized campaigns, and data-driven insights that drive real results.
             </motion.p>
 
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 }}
+              viewport={{ once: true }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button size="lg" className="group">
@@ -102,8 +115,9 @@ export function Hero() {
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4 }}
+              viewport={{ once: true }}
               className="flex gap-8 pt-8"
             >
               {[
@@ -126,8 +140,9 @@ export function Hero() {
           {/* Hero Visual */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
             className="relative"
           >
             <motion.div
@@ -149,7 +164,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Floating elements */}
               <motion.div
                 animate={{ rotate: 360 }}
@@ -158,7 +173,7 @@ export function Hero() {
               >
                 ⭐
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -170,6 +185,7 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
+ 

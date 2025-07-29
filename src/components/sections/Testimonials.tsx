@@ -9,7 +9,7 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      content: "SaaSFlow has completely transformed how our team collaborates. The intuitive interface and powerful features have increased our productivity by 300%.",
+      content: "'ADmyBRAND AI has completely transformed our marketing strategy. We\'ve seen a 300% increase in engagement and our campaigns are more targeted than ever before.",
       author: "Sarah Chen",
       role: "CTO",
       company: "TechCorp",
@@ -17,7 +17,7 @@ export function Testimonials() {
       rating: 5
     },
     {
-      content: "The analytics dashboard gives us insights we never had before. We can now make data-driven decisions that have doubled our conversion rates.",
+      content: "The AI-powered content generation is incredible. It understands our brand voice perfectly and creates content that resonates with our audience every time.",
       author: "Michael Rodriguez",
       role: "Head of Growth",
       company: "StartupXYZ",
@@ -25,7 +25,7 @@ export function Testimonials() {
       rating: 5
     },
     {
-      content: "Outstanding customer support and a product that just works. We migrated our entire infrastructure and couldn't be happier with the results.",
+      content: "The automation features have saved us countless hours while improving our ROI. The analytics dashboard gives us insights we never had before.",
       author: "Emily Johnson",
       role: "Operations Director",
       company: "GlobalTech",
@@ -33,7 +33,7 @@ export function Testimonials() {
       rating: 5
     },
     {
-      content: "The security features and compliance tools gave us confidence to scale globally. Now we're operating in 15 countries seamlessly.",
+      content: "Implementation was seamless and the support team is outstanding. ADmyBRAND AI has become an essential part of our marketing toolkit.",
       author: "David Park",
       role: "CEO",
       company: "ScaleUp Inc",
@@ -87,7 +87,8 @@ export function Testimonials() {
           </h2>
           
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Join thousands of satisfied customers who have transformed their businesses with our platform.
+          Join thousands of marketing professionals who trust ADmyBRAND AI 
+          to power their campaigns and drive exceptional results.
           </p>
         </motion.div>
 

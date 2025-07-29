@@ -3,44 +3,66 @@ import { motion } from 'framer-motion';
 import { Shield, Zap, Users, BarChart3, Globe, Smartphone } from 'lucide-react';
 import { Card } from '../ui/Card';
 import "../../index.css";
+import {
+  SparklesIcon,
+  ChartBarIcon,
+  UserGroupIcon,
+  CogIcon,
+  LightBulbIcon,
+  ShieldCheckIcon,
+  RocketLaunchIcon,
+  GlobeAltIcon
+} from '@heroicons/react/24/outline'
 
 export function Features() {
   const features = [
     {
-      icon: Shield,
-      title: 'Enterprise Security',
-      description: 'Bank-grade encryption and compliance with SOC2, GDPR, and more.',
+      icon: SparklesIcon,
+      title: 'AI-Powered Content Generation',
+      description: 'Create compelling ad copy, social media posts, and email campaigns with our advanced AI that understands your brand voice.',
       color: 'text-green-600 dark:text-green-400'
     },
     {
-      icon: Zap,
-      title: 'Lightning Fast',
-      description: 'Optimized performance with sub-second response times globally.',
+      icon: CogIcon,
+    title: 'Marketing Automation',
+    description: 'Set up sophisticated automation workflows that nurture leads and convert prospects into loyal customers',
+      color: 'text-green-600 dark:text-green-400'
+    },
+    {
+      icon: LightBulbIcon,
+    title: 'Creative Optimization',
+    description: 'AI-driven A/B testing and creative optimization to maximize engagement and conversion rates across all channels.',
       color: 'text-yellow-600 dark:text-yellow-400'
     },
     {
-      icon: Users,
-      title: 'Team Collaboration',
-      description: 'Real-time collaboration tools built for modern distributed teams.',
+      icon: UserGroupIcon,
+      title: 'Audience Segmentation',
+      description: 'Automatically segment your audience based on behavior, demographics, and engagement patterns for targeted campaigns.',
       color: 'text-blue-600 dark:text-blue-400'
     },
     {
-      icon: BarChart3,
-      title: 'Advanced Analytics',
-      description: 'Deep insights and reporting to drive data-driven decisions.',
+      icon: ChartBarIcon,
+      title: 'Advanced Analytics & Insights',
+      description: 'Get deep insights into campaign performance with real-time analytics and predictive modeling for better ROI.',
       color: 'text-purple-600 dark:text-purple-400'
     },
     {
-      icon: Globe,
-      title: 'Global Scale',
-      description: 'Deploy anywhere with our worldwide infrastructure network.',
+      icon: ShieldCheckIcon,
+      title: 'Brand Safety & Compliance',
+      description: 'Ensure all content meets brand guidelines and industry compliance standards with automated monitoring.',
       color: 'text-indigo-600 dark:text-indigo-400'
     },
     {
-      icon: Smartphone,
-      title: 'Mobile First',
-      description: 'Native mobile experience with offline capabilities.',
+      icon: RocketLaunchIcon,
+      title: 'Campaign Launch Assistant',
+      description: 'Launch campaigns across multiple platforms simultaneously with intelligent scheduling and budget optimization.',
       color: 'text-pink-600 dark:text-pink-400'
+    },
+    {
+      icon: GlobeAltIcon,
+    title: 'Multi-Channel Integration',
+    description: 'Seamlessly integrate with all major advertising platforms, social media, and marketing tools in one dashboard.',
+      color: 'text-blue-600 dark:text-blue-400'
     }
   ];
 

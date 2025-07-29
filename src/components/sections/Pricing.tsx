@@ -11,50 +11,54 @@ export function Pricing() {
   const plans = [
     {
       name: 'Starter',
-      description: 'Perfect for individuals and small projects',
+      description: 'Perfect for small businesses and startups',
       monthlyPrice: 29,
       yearlyPrice: 290,
       features: [
-        'Up to 5 team members',
-        '10GB storage',
-        'Basic analytics',
-        'Email support',
-        'Core integrations'
+        'AI Content Generation (100 pieces/month)',
+      'Basic Analytics Dashboard',
+      'Email Campaign Automation',
+      '2 Social Media Integrations',
+      'Standard Support',
+      'Brand Voice Training'
       ],
       popular: false,
       color: 'from-gray-600 to-gray-800'
     },
     {
       name: 'Professional',
-      description: 'Ideal for growing teams and businesses',
+      description: 'Ideal for growing marketing teams',
       monthlyPrice: 79,
       yearlyPrice: 790,
       features: [
-        'Up to 25 team members',
-        '100GB storage',
-        'Advanced analytics',
-        'Priority support',
-        'All integrations',
-        'Custom workflows',
-        'API access'
+        'AI Content Generation (500 pieces/month)',
+      'Advanced Analytics & Insights',
+      'Multi-Channel Campaign Management',
+      '10 Platform Integrations',
+      'A/B Testing & Optimization',
+      'Priority Support',
+      'Custom Brand Guidelines',
+      'Team Collaboration Tools'
       ],
       popular: true,
       color: 'from-blue-600 to-purple-600'
     },
     {
       name: 'Enterprise',
-      description: 'For large organizations with custom needs',
+      description: 'For large organizations with complex needs',
       monthlyPrice: 199,
       yearlyPrice: 1990,
       features: [
-        'Unlimited team members',
-        'Unlimited storage',
-        'Enterprise analytics',
-        '24/7 phone support',
-        'Custom integrations',
-        'Advanced security',
-        'Dedicated manager',
-        'SLA guarantee'
+        'Unlimited AI Content Generation',
+        'Enterprise Analytics Suite',
+        'White-label Solutions',
+        'Unlimited Integrations',
+        'Advanced Automation Workflows',
+        'Dedicated Account Manager',
+        'Custom AI Model Training',
+        'API Access',
+        'SSO & Advanced Security',
+        'Custom Reporting'
       ],
       popular: false,
       color: 'from-purple-600 to-pink-600'
