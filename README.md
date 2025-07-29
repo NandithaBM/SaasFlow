@@ -112,5 +112,4 @@ This project is open-source under the MIT License. See the LICENSE file for deta
 
 ---
 
-You can edit this file anytime via GitHub or locally using your editor. Let me know if you'd like badges, screenshots, or deployment links added!
-::contentReference[oaicite:0]{index=0}
+You can edit this file anytime via GitHub or locally using your editor.
